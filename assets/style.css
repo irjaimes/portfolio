@@ -78,7 +78,7 @@ footer div a  {
     padding: 60px;
 }
 .hero-text { 
-    margin: 6% 0 0;
+    margin: 10% 0 0;
     font-size: 18px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -115,14 +115,23 @@ section {
 .right{
     border-left: 2px solid var(--navy-blue);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-left: 40px ;
     grid-column: span 3 ;
 }
 
 /* ABOUT ME STYLES */
-.photo { 
-  
+#about-me {
+    display: flex; 
+}
+#about-me-text {
+    padding: 25px;
+}
+.photo {
+    border: 1px solid black;
+    background-image: url("/assets/images/user-icon.png"); /** FIX BROKEN LINK **/
+    min-width: 200px;
+    min-height: 200px;
 }
 
 /* WORK GRID STYLES */
@@ -195,6 +204,9 @@ div.work-grid {
     background-position: center;
 }
  /* CONTACT INFO */
+ #contact-me {
+    justify-content: space-evenly;
+ }
  #phone, #email, #github, #linkedin, #spotify {
      color: var(--light-blue);
      background-color: var(--dark-gray);
