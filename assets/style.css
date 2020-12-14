@@ -52,7 +52,7 @@ header li a, footer a {
     color: var(--saphire);
     font-size: 1.5vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    border-radius: 20px 20px;
+    border-radius: 25px 25px;
     transition: 0.5s;  
 }
 header li a:hover, footer a:hover {
@@ -195,22 +195,37 @@ div.work-grid {
     background-position: center;
 }
  /* CONTACT INFO */
- #phone {
-     color:  var(--saphire);
-     background-color: var(--black-trans);
+ #phone, #email, #github, #linkedin, #spotify {
+     color: var(--light-blue);
+     background-color: var(--dark-gray);
      padding: 10px;
-     border-radius: 50px 50px;
+     border-radius: 5px 5px;
      text-shadow: 1px 1px 2px rgba(50, 50, 50, 1);
      -webkit-box-shadow: 3px 3px 7px 0px rgba(50, 50, 50, 0.75);
      -moz-box-shadow: 3px 3px 7px 0px rgba(50, 50, 50, 0.75);
      box-shadow: 3px 3px 7px 0px rgba(50, 50, 50, 0.75);
      transition: .5s;
  }
-
-#phone:hover {
+ /* contact anchor link animation */
+#phone:hover, #email:hover {
     color: var(--gray);
     background-color:  var(--saphire);
 }
+#github:hover {
+    color: var(--gray);
+    background-color: black;
+}
+#linkedin:hover {
+    color: var(--gray);
+    background-color: #0072b1 ;
+}
+#spotify:hover {
+    color: black;
+    background-color: #1DB954;
+}
+
+
+
 
 
   /* MEDIA QUERIES */
