@@ -148,8 +148,11 @@ div.work-grid {
     display: flex;
     align-items: flex-end ;
     border: 2px solid var(--dark-gray);
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat; =   
 }
+
+
+
 /* project anchor links */
 .prj {
     line-height: 2;
@@ -159,14 +162,14 @@ div.work-grid {
     background-color: rgba(1, 1, 1, 0.8);
     width: 100%;
     align-self: top;
-    transition: 0.75s;
+   /* transition: 0.75s;*/
 }
 /* project anchor links animation */
-.prj:hover {
+/*.prj:hover {
     font-size: 3em;
     color: var(--dark-gray);
     background-color: var(--dg-trans);
-}
+}*/
 .box-1 {
     grid-column: 1/ span 4;
     grid-row: 1/span 8;
@@ -174,13 +177,32 @@ div.work-grid {
     background-size: cover;
     background-position: center;
     opacity: var(--gray);
+    transition: ease .75s;
 }
+/* on hover animation START */
+.box-1:hover {
+    transform: scale(1.1);
+    z-index: 1;
+    font-size: 3em;
+    color: var(--dark-gray);
+    background-color: var(--dg-trans);
+}
+.box-2:hover, .box-3:hover, .box-4:hover, .box-5:hover {
+    transform: scale(1.3);
+    z-index: 1;
+    font-size: 3em;
+    color: var(--dark-gray);
+    background-color: var(--dg-trans);
+}
+/* on hover animation END */
+
 .box-2 {
     grid-column: 5/span 2;
     grid-row: 1/span 4;
     background-image: url("./images/ph-2.jpg");
     background-size: cover;
     background-position: center;
+    transition: ease .75s;
 }
 .box-3 {
     grid-column: 5/span 2;
@@ -188,6 +210,7 @@ div.work-grid {
     background-image: url("./images/ph-3.jpg");
     background-size: cover;
     background-position: center;
+    transition: ease .75s;
 }
 .box-4 {
     grid-column: 1/ span 2;
@@ -195,6 +218,7 @@ div.work-grid {
     background-image: url("./images/ph-4.png");
     background-size: cover;
     background-position: center;
+    transition: ease .75s;
 }
 .box-5 {
     grid-column: 3/span 2;
@@ -202,7 +226,9 @@ div.work-grid {
     background-image: url("./images/ph-5.png");
     background-size: cover;
     background-position: center;
+    transition: ease .75s;
 }
+
  /* CONTACT INFO */
  #contact-me {
     justify-content: space-evenly;
