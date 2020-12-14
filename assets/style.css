@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --c-1: #4e76b3;/* EDIT COLORS*/
+    --c-2: #024e76;/* EDIT COLORS*/
+    --c-3: #1a345c;/* EDIT COLORS*/
+}
+body {
+    background-color: #7dadc7bd;
+    color: #1a345c;
+    font-family: Montserrat, Arial, sans-serif;
+}
+/* Header */
+header {
+    padding: 20px 35px;
+    background-color: #4e76b3; /* EDIT COLORS*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url("/assets/images/chevron-pat.jpg");
+    background-size: cover;
+    background-position: center;
+}
+header h1 {
+    font-family: Lato, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: #1a345c; /* EDIT COLORS*/
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+header a {
+    text-decoration: none;
+    color: #024e76; /* EDIT COLORS*/
+}
+header nav {
+    margin: 7px 0;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.5vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+header nav ul li a:hover {
+    background: #4e76b3; /* EDIT COLORS*/
+    color: #024e76; /* EDIT COLORS*/
+    border-radius: 15px;
+    text-shadow: none;
+  }
+footer {
+    color: #7dadc7;
+    background: #4e76b3; /* EDIT COLORS*/
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+}
+
+/* HERO STYLES */
+.hero {
+    background-image: url("./images/chevron-pat.jpg");
+    background-position: 80%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 60px;
+}
+.hero-text { 
+    margin: 6% 0 0;
+    font-size: 18px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.hero-text h2 {  
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* SECTIONS & CONTAINER STYLES*/
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 60px;
+    gap:  50px;
+}
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section.right {
+    border-left: 2px solid blue;
+    padding: 35px;
+}
+.left{
+    font-family: Lato, Arial, sans-serif;
+    padding: 35px;
+    align-items: center;
+}
+.right{
+    grid-column: span 2;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
