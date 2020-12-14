@@ -120,8 +120,8 @@ section {
 }
 
 /* ABOUT ME STYLES */
-.photo {
-    background-image: url("/assets/images/user-icon.png");
+.photo { 
+  
 }
 p {
     text-align: left;
