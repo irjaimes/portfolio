@@ -9,7 +9,7 @@
     --c-3: #1a345c;/* EDIT COLORS*/
 }
 body {
-    background-color: #7dadc7bd;
+    background-color: #9bb1bd;
     color: #1a345c;
     font-family: Montserrat, Arial, sans-serif;
 }
@@ -81,34 +81,97 @@ footer {
 }
 .hero-text h2 {  
     background: rgba(0, 0, 0, 0.2);
+    font-style: italic;
+    padding: 10px;
+    
 }
 
 /* SECTIONS & CONTAINER STYLES*/
 .content-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     padding: 60px;
-    gap:  50px;
+    gap: 40px 10px;
 }
 section {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: right;
 }
-section.right {
-    border-left: 2px solid blue;
-    padding: 35px;
+#work  {
+    grid-row: 2/span 2;
 }
+#work-section {
+    grid-row: 2/span 2;
+}
+
 .left{
     font-family: Lato, Arial, sans-serif;
-    padding: 35px;
-    align-items: center;
+    display: flex;
+    justify-content: right;
+    padding-right: 40px;
 }
 .right{
-    grid-column: span 2;
-    padding: 20px;
+    border-left: 2px solid #1a345c;
+    padding-left: 40px ;
+    grid-column: span 3 ;
 }
+
+/* ABOUT ME STYLES */
+.photo {
+    background-image: url("/assets/images/user-icon.png");
+}
+p {
+    text-align: left;
+}
+/* WORK GRID STYLES */
+
+div.work-grid { 
+    display: grid;
+    width: 100%;
+    height: 400px;
+    justify-content: space-between;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 1fr) ;
+    gap: 10px;
+    
+  }
+.grid-item { 
+    display: flex;
+    align-items: flex-end ;
+    border: 2px solid black; 
+}
+
+.box-1 {
+    grid-column: 1/ span 4;
+    grid-row: 1/span 8;
+}
+.box-2 {
+    grid-column: 5/span 2;
+    grid-row: 1/span 4;
+}
+.box-3 {
+    grid-column: 5/span 2;
+    grid-row: 5/ span 4;
+}
+.box-4 {
+    grid-column: 1/ span 2;
+    grid-row: 9/ span 4;
+}
+.box-5 {
+    grid-column: 3/span 2;
+    grid-row: 9/ span 4;
+}
+   
+
+
+
+ /* CONTACT INFO */
+
+  /* MEDIA QUERIES */
+
 
 
 
