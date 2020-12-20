@@ -129,7 +129,9 @@ section {
 }
 .photo {
     border: 1px solid black;
-    background-image: url("/assets/images/user-icon.png"); /** FIX BROKEN LINK **/
+    background-image: url("images/user-icon.png"); 
+    background-position: cover;
+    background-size: 50%;
     min-width: 200px;
     min-height: 200px;
 }
@@ -148,7 +150,7 @@ div.work-grid {
     display: flex;
     align-items: flex-end ;
     border: 2px solid var(--dark-gray);
-    background-repeat: no-repeat; =   
+    background-repeat: no-repeat; 
 }
 
 
